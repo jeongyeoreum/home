@@ -10,46 +10,57 @@
 <body>
 <h3>취업 정보 계정 만들기</h3>
 
-<p>* 필수 입력 항목</p>
+<p style="color: red",font-size="10">* 필수 입력 항목</p>
+<hr>
+<style>
+    body {}
+    {color: lightblue}
+    p1{background-color:lightblue }
+    p.main {background: lightblue; padding-left:10px; width: 800px;  font-weight:bold}
+    strong{color:red;}
+    c{display:inline-block;padding-right: 8px;margin-left: 8px;text-align: right;width:130px;}
+    #box{padding-right: 8px;margin-left: 8px;}
+</style>
 <p></p>
 <p></p>
-<p>기본 정보</p>
+<p class="main">
+기본 정보</p>
 
 <form>
-    이 름*  <input type="text" size="8" value=""><br>
-    이메일*  <input type="email"placeholder="id@domain_name" size="15" value=""><br>
-    암호*  <input type="password" size="12" value=""><br>
-    암호 확인*  <input type="password" size="12" value=""><br>
-    모바일 폰*  <input type="tel"placeholder="010-0000-0000" size="13" value=""><br>
-    개인 홈페이지*  <input type="url" placeholder="http://" size="30" value=""><br>
-    주소*  <input type="text" size="30" value=""><br>
+    <c>이 름<strong>*</strong></c>  <input type="text" size="8" value=""><br>
+    <c>이메일<strong>*</strong></c>  <input type="email"placeholder="id@domain_name" size="15" value=""><br>
+    <c>암호<strong>*</strong></c> <input type="password" size="12" value=""><br>
+    <c>암호 확인<strong>*</strong></c>  <input type="password" size="12" value=""><br>
+    <c>모바일 폰<strong>*</strong></c>  <input type="tel"placeholder="010-0000-0000" size="13" value=""><br>
+    <c>개인 홈페이지<strong>*</strong></c>  <input type="url" placeholder="http://" size="30" value=""><br>
+    <c>주소<strong>*</strong></c>  <input type="text" size="30" value=""><br>
 <P>
 
 </P>
-    학 력
+    <p class="main">학 력</p>
 <p>
 
 </p>
-    학교명*  <input type="text" size="12" value=""><br>
-    전 공*  <input type="text" size="12" value=""><br>
-    졸업 여부*  <select name="choice"><br>
+    <c>학교명<strong>*</strong></c>  <input type="text" size="12" value=""><br>
+    <c>전 공<strong>*</strong></c>  <input type="text" size="12" value=""><br>
+    <c>졸업 여부<strong>*</strong></c>  <select name="choice"><br>
     <option value="1" selected>---선택---</option>
     <option value="2">졸업예정</option>
     <option value="3">졸업</option>
 </select><br>
-    졸업(예정)일 <input type="date" size="15" value=""><br>
+    <c>졸업(예정)일</c> <input type="date" size="15" value=""><br>
 <p></p>
-    업무 경력
+    <p class="main"> 업무 경력 </p>
 <p></p>
-    근무업체명 <input type="text" size="20" value=""><br>
-    직 위 <input type="text" size="10" value=""><br>
-    담당 업무 <textarea cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.
+   <c>근무업체명</c> <input type="text" size="20" value=""><br>
+    <c>직 위</c> <input type="text" size="10" value=""><br>
+    <c>담당 업무</c><textarea cols="80" rows="10" >이전 업체에서 담당한 업무를 기술하시오.
 </textarea><br>
-    근무년수 <input type="number" min="0.0" max="10.0" step="0.5"><br><br>
+    <c>근무년수</c> <input type="number" min="0.0" max="10.0" step="0.5"><br><br>
 <p></p>
-    자기소개서
+    <p class="main">자기소개서</p>
     <p></p>
-    첨부 파일 <input type="file"><br>
+    <c>첨부 파일</c> <input type="file"><br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="submit" value="제출">
          <input type="reset" value="재작성"><br>
 
