@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>파스칼의 삼각형 만들기</title>
+</head>
+<script>
+    var n = 0;
+ function new_row(n) {
+   var n = parseInt(n);
+
+    let row = [];
+
+    row.push(1);
+
+    for (let i = 1; i <= new_row; i++) {
+
+
+        for (let j = row.length - 1; j > 0; j--) {
+            row[j] = row[j - 1] + row[j];
+        }
+
+        row.push(1);
+       }
+       return row;};
+
+
+</script>
+<body>
+<script>
+  var n = prompt("파스칼의 삼각형 높이를 입력하세요.","");
+  data = new_row(n) ;
+  document.write(data);
+
+
+</script>
+</body>
+</html>
