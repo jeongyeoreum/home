@@ -52,10 +52,10 @@
     {
      for(line = 1; line <= n; line++)
       {  var n = document.getElementById("size").value; //id가 size인 number입력창의 값을 가지고 오고 싶을 때?
-          var C=1;// used to represent C(line, i)
+          var C=1;
           for(i = 1; i <= line; i++)
          {
-        // The first value in a line is always 1
+
         document.write(C+" ");
         C = C * (line - i) / i;}
 
